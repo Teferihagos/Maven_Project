@@ -13,7 +13,7 @@ object MavenScalaExample {
       .getOrCreate()
 
     import spark.implicits._
-    val csvFilePath = raw"data/sample_data.csv"
+    val csvFilePath = raw"/tmp/bd_us/Teferi/sample_data.csv"
     // Read the CSV file
     val df: DataFrame = spark.read
       .option("header", "true")
